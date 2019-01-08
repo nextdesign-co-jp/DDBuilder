@@ -1,0 +1,229 @@
+@charset"utf-8";
+body, p, li, a { font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif };
+h1, h2 { font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif };
+body { margin:0;padding:0;}
+body { margin-left:2px; padding-left:2px;}
+
+#hd {
+	//position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : auto;
+	margin : 0;
+	padding : 0.1em;
+	text-align : left;
+	background : #008000;
+	white-space: nowrap;
+}
+
+#hd h1 {
+	color : white;
+	font-size:1.0em;
+	display: inline;
+}
+
+#hd a {
+	color : white;
+	font-size:0.8em;
+	display: inline;
+}
+
+#hd span {
+	color : white;
+	font-size:0.8em;
+	display: inline;
+}
+
+#ft {
+	color : white;
+	position : auto;
+	bottom : 0px;
+	width : 100%;
+	height : auto;
+	margin-top : 1.0em;
+	background-color : #008000;
+	//border-top : 1px solid #888;
+	z-index : 0;
+	font-size:0.8em;
+}
+
+#pageName {
+	font-size:0.8em;
+}
+
+#logo,#bd {
+	width : 650px;
+	margin: 0 auto;
+	padding: 25px 50px 0 50px;
+}
+
+#logo h1 {
+	color : white;
+	/* font-size:36pt; */
+	display: inline;
+}
+
+#logo img { 
+	display:inline;
+	vertical-align: bottom;
+	margin-left : 50px;
+	margin-right : 5px;
+}
+
+#logo, #logo h1 { margin-top : 0; padding-top : 0;}
+
+#bd {
+	width : auto;
+	height : auto;
+	position : absolute;
+	top : 30px;
+	left : 10px;
+	margin-top : 30px;
+	margin-left : 30px;
+	z-index : 1;
+	overflow: auto;
+	background-color : #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0px 0px 10px #00b8ff;
+	-webkit-box-shadow: 0px 0px 10px #00b8ff;
+	box-shadow: 0px 0px 10px #00b8ff;
+}
+
+a, a:visited, a:hover, a:active {
+	color : #6493D2;
+}
+
+p {
+	margin-top : 0.2em;
+	margin-bottom : 0.2em;
+}
+
+h1 {
+	margin-top : 0.2em;
+	margin-bottom : 0.1em;
+	margin-left : 0px;
+	font-size:1.2em;
+	//color:#FF5500;
+}
+
+h2 {
+	margin-top : 0.1em;
+	margin-bottom : 0.1em;
+	margin-left : 0px;
+	font-size:0.8em;
+	/* color:#FF5500; */
+}
+
+/* ModalWindow Titleで使用される 2015.6.2時点でh3は他では使用していない*/
+h3 {
+	padding : 0; margin:0;
+	font-size:1.0em;
+	font-weight:lighter;  /* 効かない */
+	color:#092E67;
+}
+
+button.top-button {
+	width: 160px;
+	font-size: 1.0em;
+	text-align: ccenter;
+	padding: 6px 6px 6px 6px;
+	border: 1px solid #225588;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+button.top-button:hover{
+	background-color: aqua;
+}
+
+button.small-button {
+	//width: 300px;
+	//font-size: 1.4em;
+	text-align: ccenter;
+	padding: 3px 10px 3px 10px; /* top right bottom left */
+	border: 1px solid #225588;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+button.small-button:hover{
+	background-color: aqua;
+}
+
+.entityListTable {
+ width: 100%;
+ table-layout: auto;
+ border-collapse: collapse;
+ }
+ 
+ .entityListTable th{
+ //width: 25%;
+ padding: 6px;
+ font-size: 1.0em;
+ text-align: left;
+ vertical-align: center;
+ color: #333;
+ background-color: #eee;
+ border: 1px solid #b9b9b9;
+ }
+ 
+ .entityListTable td{
+ padding: 2px;
+ text-align: left;
+ vertical-align: center;
+ //background-color: #fff;
+ border: 1px solid #b9b9b9;
+ }
+ 
+ .entityListTable tr:nth-child(even){
+ background: #eee;
+ } 
+ 
+ table.grid td.phone-number {
+	font-size:0.7em;
+}
+
+ /* Wicket Examples kokokara */
+ table.grid {
+	margin-bottom: 10px;
+	//border-bottom: 1px solid #0079d6;
+    border-collapse: collapse;
+	font-size: 1em;
+	font-family: arial;
+	width: 100%;
+	}
+
+table.grid tr { padding-top: 2px; padding-bottom: 2px; }
+table.grid tr.odd { background-color: #ffebcd; }
+table.grid tr.even { background-color: #fff; }
+table.grid tr td { padding-left: 8px; padding-right: 30px; }
+
+/* NAVIGATION */
+table.grid tr.navigation { text-align: left; font-size: 0.8em;}
+table.grid tr.navigation td { padding-right: 0px;}
+
+/* HEADERS */
+table.grid tr th { font-weight: normal; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 24px; background-color: #c1e4ff; border-bottom: 1px solid #0079d6; border-top: 1px solid #0079d6; text-align: left; white-space: nowrap; vertical-align: middle;}
+table.grid tr th a { padding-right: 15px; background-position: right; background-repeat:no-repeat; }
+table.grid tr th.wicket_orderDown a { color:black; background-image: url(images/arrow_down.png); }
+table.grid tr th.wicket_orderUp a { color: black; background-image: url(images/arrow_up.png); }
+table.grid tr th.wicket_orderNone a {
+	background-image: url(images/arrow_off.png);
+}
+table.grid tr th a { font-weight: normal; }
+
+/* FILTERS */
+table.grid td.filter-td { font-size: 1em; background-color: #c1e4ff; border-bottom: 1px solid #0079d6; }
+table.grid td.filter-td input.go { width: 45%; }
+table.grid td.filter-td input.clear { width: 45%; }
+table.grid td.filter-td input { width: 100%; font-size: 0.6em; }
+table.grid td.filter-td select { width: 100%; font-size: 0.6em; }
+
+/* Wicket Exampl kokomade */
+
+ 

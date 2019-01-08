@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<wicket:extend>
+<h1 wicket:id="ddPageTitle"></h1>
+<h2 wicket:id="ddPageContext"></h2>
+<div wicket:id="feedback">ここにメッセージが表示される</div>
+<form wicket:id="form" method="post">
+		
+	<!-- String -->
+	<p>
+	<label>グループコード</label>:
+	<input type="text" wicket:id="groupCode"/>
+	</p>
+	
+	<!-- String -->
+	<p>
+	<label>出版社記号</label>:
+	<input type="text" wicket:id="publisherCode"/>
+	</p>
+
+	<!-- String -->
+	<p>
+	<label>書名記号</label>:
+	<input type="text" wicket:id="itemCode"/>
+	</p>
+	
+	<!-- Date -->
+	<p>
+	<label>決定日</label>:
+	<input type="text" wicket:id="determinatedAt"/>
+	</p>
+	
+	<!-- Boolean -->
+	<p>
+	<input type="checkbox" wicket:id="isOldIsbn" />
+	<label style="display:inline;">キャンペーン1</label>
+	</p>
+	
+	<div>
+		<input type="submit" wicket:id="ok" value="%保存%"/>
+		<input type="button" wicket:id="cancel" value="%キャンセル%"/>
+	</div>
+	
+</form>
+</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title></title>		
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="Stylesheet" />
+</head>
+<body>
+<wicket:extend>
+<div>
+<h1>%サービスメソッド一覧%</h1>
+
+<!-- TABLE -->
+<table class="entityListTable">
+<tr>
+  <th>%実行%</th>
+  <th>%サービスクラス%</th>
+  <th colspan="2">%メソッド%</th>
+  <th>%戻り値型%</th>
+  <th>%引数%</th>
+</tr>
+<tr wicket:id="listView">
+  <td><a href="#" wicket:id="serviceMethod">%実行%</a></td>
+  <td wicket:id="serviceClassName">BookService</td>
+  <td wicket:id="methodTitle">書籍検索</td>
+  <td wicket:id="serviceMethodName">メソッド名</td>
+  <td wicket:id="returnValue">returnValue</td>
+  <td wicket:id="parameters">parameters</td>
+</tr>
+</table>
+<!-- NAVIGATOR -->
+<div wicket:id="pagingNavigator"></div>
+<!-- NAVIGATOR -->
+
+</div>
+</wicket:extend>
+</body>
+</html>

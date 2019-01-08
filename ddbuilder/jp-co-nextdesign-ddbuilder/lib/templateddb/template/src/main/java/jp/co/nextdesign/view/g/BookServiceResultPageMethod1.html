@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<wicket:extend>
+<h1 wicket:id="ddPageTitle"></h1>
+<h2 wicket:id="ddPageContext"></h2>
+
+<!-- TABLE -->
+<table class="entityListTable">
+  <tr wicket:id="listView">
+    <td><span wicket:id="dDBEntityTitle">値</span></td>
+  </tr>
+</table>
+
+<!-- BLOCKSTART Navi -->
+<!-- CASE OneToMany -->
+<!-- NAVIGATOR -->
+<div wicket:id="pagingNavigator"></div>
+<!-- NAVIGATOR -->
+<!-- BLOCKEND Navi -->
+
+<p>
+  <input type="button" wicket:id="cancel" value="%戻る%"/>
+</p>
+
+</wicket:extend>
+</body>
+</html>

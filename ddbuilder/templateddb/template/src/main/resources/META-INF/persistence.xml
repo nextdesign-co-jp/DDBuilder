@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+   
+    <persistence-unit name="nextdesign_pu" transaction-type="RESOURCE_LOCAL">
+    <description>Derby Persistence Unit</description>
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <!-- This is where we tell JPA/Hibernate about our @Entity objects -->
+
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
+        <!-- create Database or not -->
+        <property name="javax.persistence.jdbc.url" value="jdbc:derby:jp_co_nextdesign_template_data;create=true" />
+        <property name="javax.persistence.jdbc.user" value="" />
+        <property name="javax.persistence.jdbc.password" value="" />
+        <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyTenSixDialect" />
+        
+        <!-- 
+        value = 
+        "create-drop" or "create" AT REBUILD, 
+        "update" IN DEVELOPMENT, 
+        "none" IN OPERATION" 
+        -->
+        <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+        
+        <property name="hibernate.show_sql" value="true" />
+        <property name="hibernate.format_sql" value="true" />
+        <property name="hibernate.transaction.flush_before_completion" value="true" />
+    </properties>
+    </persistence-unit>
+</persistence>

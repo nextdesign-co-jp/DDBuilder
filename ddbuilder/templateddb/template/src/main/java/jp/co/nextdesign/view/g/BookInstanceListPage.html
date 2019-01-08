@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title></title>		
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="Stylesheet" />
+</head>
+<body>
+
+<wicket:extend>
+<div>
+<h1>Book %一覧%</h1>
+<div wicket:id="feedback">ここにメッセージが表示される</div>
+
+<!-- TABLE -->
+<table>
+<tr>
+<td width="200"><a href="#" wicket:id="create">%新規作成%</a></td>
+<td>%総件数% = <span wicket:id="totalCount"></span></td>
+</tr>
+</table>
+
+<!-- TABLE -->
+<table class="entityListTable">
+<tr>
+  <th colspan="2">%操作%</th>
+  
+  <th><span wicket:id="dDBEntityTitleTh">列ヘッダー</span></th>
+  
+  <!-- comment out 2016.11.26
+  <th>id</th>
+  <th>%作成日%</th>
+  -->
+  
+</tr>
+
+<tr wicket:id="listView">
+  <td><a href="#" wicket:id="edit">%編集%</a></td>
+  <td><a href="#" wicket:id="delete">%削除%</a></td>
+
+  <td><span wicket:id="dDBEntityTitle">%列値%</span></td>
+  
+  <!-- comment out 2016.11.26
+  <td><span wicket:id="id">ID(AUTO)</span></td>
+  <td><span wicket:id="createdAt">%作成日%</span></td>
+  -->
+
+ </tr>
+</table>
+<!-- NAVIGATOR -->
+<div wicket:id="pagingNavigator"></div>
+<!-- NAVIGATOR -->
+
+</div>
+</wicket:extend>
+
+</body>
+</html>

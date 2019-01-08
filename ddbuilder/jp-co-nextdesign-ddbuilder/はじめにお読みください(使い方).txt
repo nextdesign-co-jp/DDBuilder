@@ -1,0 +1,33 @@
+==============
+DDBuilder
+==============
+
+本製品は同梱の「ソフトウエアの使用条件」に同意された方のみご使用いただけます。
+
+１．インストール方法
+ダウンロードしたファイルを適当な場所に解凍してください。
+
+２．起動方法
+jp-co-nextdesign-ddbuilder\startDdbuilder.bat を起動（ダブルクリック）してください。
+
+３．アンインストール方法
+jp-co-nextdesign-startDdbuilderフォルダを削除してください。
+
+４．確認済みの稼動環境
+Java SE7,SE8 + Windows7 Professional
+
+５．操作手順
+(1) このフォルダのDDBuilder_QuickStart.pdfを参照してください。
+
+６．詳細情報
+利用ガイド、ドメインクラスのサンプルコード、サービスクラスのサンプルコードについては、
+下記ホームページを参照ください。
+
+===============
+お問い合わせ先
+===============
+ホームページ　http://www.nextdesign.co.jp/
+メール　info@nextdesign.co.jp
+
+
+以上

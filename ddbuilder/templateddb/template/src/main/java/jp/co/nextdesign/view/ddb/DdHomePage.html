@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>NEXTDesign DDBuilder</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="hd">
+<h1>%仮アプリケーション名%</h1>
+&nbsp;&nbsp;&nbsp;<span>%ホーム （スタティックページ AWS Health Check 対応）%</span>
+</div>
+
+<div>
+<h1>%ホーム%</h1>
+<p>
+<wicket:link>
+<p><button class="top-button" onclick="location.href='./wicket/bookmarkable/jp.co.nextdesign.view.g.ServiceMethodListPage'">%サービス一覧%</button></p>
+<p><button class="top-button" onclick="location.href='./wicket/bookmarkable/jp.co.nextdesign.view.g.DomainClassListPage'">%ドメインクラス一覧%</button></p>
+<p><button class="top-button" onclick="location.href='./wicket/bookmarkable/jp.co.nextdesign.view.g.TestDataLoadPage'">%テストデータ追加%</button></p>
+</wicket:link>
+</p>
+</div>
+
+<!-- FOOTER -->
+<div id="ft">
+<p>%共通フッター%</p>
+</div>
+</body>
+</html>

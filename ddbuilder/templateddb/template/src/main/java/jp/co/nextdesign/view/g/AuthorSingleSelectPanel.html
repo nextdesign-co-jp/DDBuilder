@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+	<wicket:panel>
+	<form wicket:id="form" method="post">
+		<!-- Single Choice -->
+		<div wicket:id="singleChoiceRadioGroup">
+		<table>
+			<tr wicket:id="singleChoiceList">
+			<td class="choiceText">
+			<input type="radio" wicket:id="singleChoice" />
+			<label wicket:id="singleChoiceLabel" style="display:inline;"></label>
+			</td>
+			</tr>
+		</table>
+		</div>
+		<div>
+			&nbsp;<input type="submit" wicket:id="ok" value="%仮決定%"/>
+			&nbsp;<input type="button" wicket:id="cancel" value="%キャンセル%"/>
+		</div>
+	</form>
+	</wicket:panel>
+	</body>
+</html>

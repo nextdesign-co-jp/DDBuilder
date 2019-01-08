@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<wicket:extend>
+<h1 wicket:id="ddPageTitle"></h1>
+<h2 wicket:id="ddPageContext"></h2>
+<div wicket:id="feedback">ここにメッセージが表示される</div>
+<form wicket:id="form" method="post">
+		
+	<!-- BLOCKSTART Field -->
+	<!-- CASE String -->
+	<!-- String -->
+	<p>
+	<label>書名</label>:
+	<input type="text" wicket:id="name"/>
+	</p>
+	
+	<!-- CASE Date -->
+	<!-- Date -->
+	<p>
+	<label>出版日</label>:
+	<input type="text" wicket:id="publishedAt"/>
+	</p>
+
+	<!-- CASE BigDecimal -->
+	<!-- BigDecimal -->
+	<p>
+	<label>価格</label>:
+	<input type="text" wicket:id="price"/>
+	</p>
+	
+	<!-- CASE Boolean -->
+	<!-- Boolean -->
+	<p>
+	<input type="checkbox" wicket:id="campaign1" />
+	<label style="display:inline;">キャンペーン1</label>
+	</p>
+		
+	<!-- CASE nop -->
+	<p>
+	<input type="checkbox" wicket:id="isCampaign2" />
+	<label style="display:inline;">キャンペーン2</label>
+	</p>
+
+	<!-- CASE Enum -->
+	<!-- Enum -->
+	<p>
+	<label>Enum型属性名</label>:
+	<select wicket:id="attEnum"></select>
+	</p>
+	
+	<!-- CASE Embedded -->
+	<!-- Embedded サービスメソッド実行では使用しないパターン
+	<p>
+	<label>ISBN</label>:
+	<button class="small-button" wicket:id="isbn">%編集%</button>
+	&nbsp;<label wicket:id="isbnTitle"></label>
+	&nbsp;サービスメソッド実行画面では発生しないパターン
+	</p>
+	 -->
+
+	<!-- CASE ManyToOne -->
+	<!-- ManyToOne -->
+	<p>
+	<label>著者</label>:
+	<button class="small-button" wicket:id="author">%選択%</button>
+	&nbsp;<label wicket:id="authorTitle"></label>
+	</p>
+	
+	<!-- CASE OneToMany -->
+	<!-- OneToMany -->
+	<p>
+	<label>版</label>:
+	<button class="small-button" wicket:id="editionList">%選択%</button>
+	&nbsp;<label wicket:id="editionListTitle"></label>
+	</p>
+
+	<!-- CASE ManyToMany -->
+	<!-- ManyToMany サービスメソッド実行では使用しないパターン
+	<p>
+	<label>店舗</label>:
+	<button class="small-button" wicket:id="storeList">%選択%</button>
+	&nbsp;<label wicket:id="storeListTitle"></label>
+	&nbsp;サービスメソッド実行画面では発生しないパターン
+	</p>
+	 -->
+	
+	<!-- CASE JavaPrimitiveClass -->
+	<!-- JavaPrimitiveClass -->
+	<p>
+	<label>整数型属性名</label>:
+	<input type="text" wicket:id="integerAttribute"/>
+	</p>
+	
+	<!-- CASE nop -->
+	<p>
+	<label>Byte型</label>:
+	<input type="text" wicket:id="attByte"/>
+	</p>
+	<p>
+	<label>Short型</label>:
+	<input type="text" wicket:id="attShort"/>
+	</p>
+	<p>
+	<label>Long型</label>:
+	<input type="text" wicket:id="attLong"/>
+	</p>
+	<p>
+	<label>Float型</label>:
+	<input type="text" wicket:id="attFloat"/>
+	</p>
+	<p>
+	<label>Double型</label>:
+	<input type="text" wicket:id="attDouble"/>
+	</p>
+	<p>
+	<label>Character型</label>:
+	<input type="text" wicket:id="attCharacter"/>
+	</p>
+	<!-- BLOCKEND Field -->
+	
+	<div>
+		<input type="submit" wicket:id="ok" value="%サービス実行%"/>
+		<input type="submit" wicket:id="cancel" value="%戻る%"/>
+	</div>
+	
+</form>
+
+<!-- BLOCKSTART Modal -->
+<!-- CASE Div -->
+<div wicket:id="authorModalWindow"></div>
+
+<!-- CASE nop -->
+<div wicket:id="editionListModalWindow"></div>
+<!-- 使用しない
+<div wicket:id="storeListModalWindow"></div>
+ -->
+<!-- BLOCKEND Modal -->
+
+</wicket:extend>
+</body>
+</html>
