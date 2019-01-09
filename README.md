@@ -8,7 +8,8 @@ A software tool to generate Java web applications from Domain Driven Design doma
 - DDBuilder (tool body)
 https://github.com/nextdesign-co-jp/DDBuilder.git
 - DDBuildertemplate (template)
-https://github.com/nextdesign-co-jp/DDBuilderTemplate.git
+https://github.com/nextdesign-co-jp/DDBuilderTemplate.git  
+
 
 ## Requirement
 1. Eclipse-jee.
@@ -20,6 +21,9 @@ https://github.com/nextdesign-co-jp/DDBuilderTemplate.git
 3. DDBuilderTemplate is a JavaEE project.
 4. After modifying the DDBuilderTemplate, it is necessary to reflect the template in the DDBuilder side.
 Please refer to the contents of "CopyTemplateIntoDDBuilder.bat" of DDBuilder for the method to reflect.
+5. Reference sites
+http://www.nextdesign.co.jp/ddd/en_index.html  
+http://www.nextdesign.co.jp/ddd/index.html (Japanese)  
 
 ## Licence
 [Apache License Version 2.0 January 2004]
@@ -30,6 +34,6 @@ Next Design Ltd.
 http://www.nextdesign.co.jp/
 
 # References
-See the licenses folder.
+See the licenses folder.  
 We ware inspired by Naked Objects Pattern.
 
