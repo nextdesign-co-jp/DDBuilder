@@ -1,0 +1,14 @@
+*.class
+*.jar
+*.war
+*.ear
+.project
+.classpath
+.settings
+DDBuilder/bin/
+DDBuilder/bin/jp/
+DDBuilder/templateddb/
+DDBuilder/jp-co-nextdesign-ddbuilder/lib/ddbuilder_lib/
+DDBuilder/jp-co-nextdesign-ddbuilder/lib/templateddb/
+DDBuilder/jp-co-nextdesign-ddbuilder.zip
+
