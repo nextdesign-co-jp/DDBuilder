@@ -21,7 +21,7 @@ https://github.com/nextdesign-co-jp/DDBuilderTemplate.git
 3. DDBuilderTemplate is a JavaEE project.
 4. After modifying the DDBuilderTemplate, it is necessary to reflect the template in the DDBuilder side.
 Please refer to the contents of "CopyTemplateIntoDDBuilder.bat" of DDBuilder for the method to reflect.
-5. Reference sites
+5. Reference sites  
 http://www.nextdesign.co.jp/ddd/en_index.html  
 http://www.nextdesign.co.jp/ddd/index.html (Japanese)  
 
