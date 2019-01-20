@@ -5,9 +5,9 @@ A software tool to generate Java web applications from Domain Driven Design doma
 1. Supports iterative development with domain driven design.
 2. By automatically generating Java web applications from the domain model, make the DDD iteration light weight and shorten the iteration cycle.
 3. The tool consists of DDBuilder and DDBuilderTemplate.
-- DDBuilder (tool body)
+- DDBuilder (tool body) 
 https://github.com/nextdesign-co-jp/DDBuilder.git
-- DDBuildertemplate (template)
+- DDBuildertemplate (template) 
 https://github.com/nextdesign-co-jp/DDBuilderTemplate.git  
 
 
@@ -20,8 +20,18 @@ https://github.com/nextdesign-co-jp/DDBuilderTemplate.git
 2. DDBuilder is a Java project.
 3. DDBuilderTemplate is a JavaEE project.
 4. After modifying the DDBuilderTemplate, it is necessary to reflect the template in the DDBuilder side.
-Please refer to the contents of "CopyTemplateIntoDDBuilder.bat" of DDBuilder for the method to reflect.
-5. Reference sites  
+Please refer to the contents of "CopyTemplateIntoDDBuilder.bat" of DDBuilder for the method to reflect.  
+5. How to start DDBuilder   
+Start jp.co.nextdesign.ddb.ui.main.BdMainWindow  
+6. How to start DDBuilderTemplate  
+Start template on Server.  
+Example: template -> right click -> debug -> debug on server  
+7. How to create an executable JAR for DDBuilder  
+DDBuilder -> right click -> export -> executable Jar file  
+- Activation configuration: BdMainWindow  
+- Export destination: ...\ddbuilder\jp-co-nextdesign-ddbuilder\lib  
+- Select [Copy required library to subfolder next to generated JAR]  
+8. Reference sites  
 http://www.nextdesign.co.jp/ddd/en_index.html  
 http://www.nextdesign.co.jp/ddd/index.html (Japanese)  
 
@@ -33,7 +43,7 @@ http://www.apache.org/licenses/
 Next Design Ltd.
 http://www.nextdesign.co.jp/
 
-# References
+## References
 See the licenses folder.  
 We ware inspired by Naked Objects Pattern.
 
